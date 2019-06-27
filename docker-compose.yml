@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  vuepress:
+    build: .
+    container_name: vuepress
+    restart: always
+    ports:
+      - 8080:8080

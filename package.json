@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
@@ -13,5 +14,8 @@
     "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
     "@vuepress/plugin-medium-zoom": "^1.0.0-rc.1",
     "vuepress": "^1.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
