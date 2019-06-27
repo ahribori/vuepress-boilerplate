@@ -3,10 +3,12 @@ module.exports = {
 
   title: 'Hello VuePress',
   description: 'Just playing around',
+  head: [
+    ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', sizes: '16x16' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32' }],
+  ],
 
-  /**
-   * https://vuepress.vuejs.org/default-theme-config/
-   */
   themeConfig: {
     sidebar: [
       '/',
@@ -37,9 +39,8 @@ module.exports = {
     '@vuepress/back-to-top': {},
     '@vuepress/medium-zoom': {
       selector: '.theme-default-content img',
-      // medium-zoom options here
-      // See: https://github.com/francoischalifour/medium-zoom#options
       options: {
+        background: '#26262B',
         margin: 16,
       },
     },
